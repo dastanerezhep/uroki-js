@@ -1,0 +1,44 @@
+body {
+  background-color: #e9ebee;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+}
+
+.tab-labels {
+  display: flex;
+}
+
+.tab-label {
+  min-width: 250px;
+  background-color: #FAFAFA;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 1px solid #d3d3d7;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  transform: translateY(1px);
+}
+
+.tab-label.active {
+  background-color: white;
+  color: #595fff;
+  border-bottom: none;
+}
+
+.tab-container {
+  display: none;
+  background-color: white;
+  border: 1px solid #d3d3d7;
+  padding: 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.tab-container.active {
+  display: inherit;
+}
