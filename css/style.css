@@ -1,7 +1,7 @@
 body {
     background-color: #e9ebee;
     font-family: "Segoe UI", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
 }
 
@@ -65,14 +65,6 @@ footer {
     margin: 0 auto;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
-.bold {
-    font-weight: 500;
-}
-
 .statics {
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +81,7 @@ footer {
     margin: 10px;
     border-radius: 6px;
     min-height: 150px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .static:first-child {
@@ -98,6 +91,45 @@ footer {
     margin-right: 0;
 }
 
+.static:nth-child(1){
+    background-color: rgb(90, 141, 226);
+}
+
+.static:nth-child(2) {
+    background-color: rgb(238, 172, 77);
+}
+
 .static:nth-child(3) {
     background-color: #D95350;
+}
+
+.static:nth-child(4){
+    background-color: rgb(93, 183, 93);
+}
+
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
+
+.user-name {
+    font-size: 14px;
+}
+
+.logo-name {
+    color: #6effc4;
+    font-weight: bold;
+    text-transform: uppercase;
 }
