@@ -85,16 +85,18 @@ footer {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
     color: white;
     padding: 25px;
+    cursor: pointer;
 }
 
 .static:first-child {
     margin-left: 0;
 }
+
 .static:last-child {
     margin-right: 0;
 }
 
-.static:nth-child(1){
+.static:nth-child(1) {
     background-color: rgb(90, 141, 226);
 }
 
@@ -106,7 +108,7 @@ footer {
     background-color: #D95350;
 }
 
-.static:nth-child(4){
+.static:nth-child(4) {
     background-color: rgb(93, 183, 93);
 }
 
@@ -122,36 +124,47 @@ footer {
 }
 
 .header-menu {
-  background-color: white;
-  position: absolute;
-  right: 30px;
-  top: 55px;
-  z-index: 100;
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-  padding: 10px 0;
-  border-radius: 6px;
-  color: #000;
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    right: 30px;
+    top: 55px;
+    z-index: 100;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+    padding: 10px 0;
+    border-radius: 6px;
+    color: #000;
+    cursor: pointer;
+}
+
+.header-menu .active{
+    background-color: #595fff;
+}
+
+.header-menu-item.active {
+    background-color: rgba(201, 201, 201, 0.76);
 }
 
 .header-menu-item {
-  padding: 8px 15px ;
-  font-size: 15px;
-  height: 18px;
-  display: flex;
-  align-items: center;
+    padding: 8px 15px;
+    font-size: 15px;
+    height: 18px;
+    display: flex;
+    align-items: center;
 
 }
 
 .header-menu-item img {
-  width: 20px;
-  height: 20px;
-  margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
 }
 
 .icon {
     width: 25px;
     height: 25px;
     padding: 15px;
+    cursor: pointer;
 }
 
 .user-name {
