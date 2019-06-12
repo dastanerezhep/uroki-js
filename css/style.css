@@ -13,7 +13,7 @@ body {
     min-width: 250px;
     background-color: #FAFAFA;
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 2px;
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
@@ -141,21 +141,12 @@ footer {
     background-color: #d2d2d2;
 }
 
-.header-menu .active{
-    background-color: #595fff;
-}
-
-.header-menu-item.active {
-    background-color: rgba(201, 201, 201, 0.76);
-}
-
 .header-menu-item {
     padding: 8px 15px;
     font-size: 15px;
     height: 18px;
     display: flex;
     align-items: center;
-
 }
 
 .header-menu-item img {
@@ -220,4 +211,13 @@ footer {
 
 .filter-right {
     float: right;
+}
+
+#filter-search{
+  width: 250px;
+  transition: width 0.3s;
+}
+
+#filter-search:focus{
+  width: 300px;
 }
