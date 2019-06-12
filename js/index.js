@@ -35,29 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     });
-    let headerMenuItem1 = document.getElementById("headerMenuItem1");
-    let headerMenuItem2 = document.getElementById("headerMenuItem2");
-    let headerMenuItem3 = document.getElementById("headerMenuItem3");
-
-    headerMenuItem1.addEventListener("mouseover", function () {
-        headerMenuItem1.classList.add("active");
-        headerMenuItem2.classList.remove("active");
-        headerMenuItem3.classList.remove("active");
-
-    });
-
-    headerMenuItem2.addEventListener("mouseover", function () {
-        headerMenuItem2.classList.add("active");
-        headerMenuItem1.classList.remove("active");
-        headerMenuItem3.classList.remove("active");
-
-    });
-
-    headerMenuItem3.addEventListener("mouseover", function () {
-        headerMenuItem3.classList.add("active");
-        headerMenuItem2.classList.remove("active");
-        headerMenuItem1.classList.remove("active");
-    });
 
 });
 

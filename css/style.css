@@ -137,6 +137,10 @@ footer {
     cursor: pointer;
 }
 
+.header-menu-item:hover{
+    background-color: #d2d2d2;
+}
+
 .header-menu .active{
     background-color: #595fff;
 }
@@ -161,10 +165,15 @@ footer {
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
-    padding: 15px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
     cursor: pointer;
+}
+
+.icon:hover{
+    background-color: rgba(45, 45, 45, 0.78);
+    border-radius: 50px;
 }
 
 .user-name {
@@ -193,4 +202,22 @@ footer {
     justify-content: space-between;
     font-size: 50px;
     align-items: center;
+}
+
+.filter-container{
+    display: flex;
+    position: relative;
+    text-align: right;
+    max-height: 53px;
+    padding: 5px 5px 5px 0px;
+    border-bottom: none;
+}
+
+.filter-left {
+    float: left;
+}
+
+
+.filter-right {
+    float: right;
 }
