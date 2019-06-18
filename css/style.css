@@ -26,7 +26,7 @@ body {
 
 .tab-label.active {
     background-color: white;
-    color: #595fff;
+    color: #3990A3;
     border-bottom: none;
 }
 
@@ -212,29 +212,47 @@ footer {
     height: 24px;
   width: 150px;
   transition: width 0.3s;
+
 }
+
 
 #filter-search:focus{
   width: 300px;
+  outline: none;
 }
 
-/*.button {*/
-/*    color: rgba(0, 0, 0, 0.87);*/
-/*    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);*/
-/*    color: rgba(0, 0, 0, 0.87);*/
-/*    padding: 8px 16px;*/
-/*    font-size: 0.75rem;*/
-/*    min-width: 64px;*/
-/*    box-sizing: border-box;*/
-/*    min-height: 36px;*/
-/*    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;*/
-/*    font-weight: 500;*/
-/*    line-height: 1.4em;*/
-/*    border-radius: 6px;*/
-/*    text-transform: uppercase;*/
-/*}*/
+.button {
+    color: white;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    padding: 8px 16px;
+    font-size: 0.75rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    min-height: 36px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-weight: 500;
+    line-height: 1.4em;
+    border-radius: 6px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #3990A3;
+    cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color: #377386;
+}
+
+.button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
 
 .table-style {
+    width: 100%;
     overflow: auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-collapse: separate;
@@ -252,7 +270,7 @@ footer {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    max-width: 93px;
+    /*max-width: 93px;*/
 }
 
 .table-style tr:last-child td:last-child {
@@ -287,3 +305,25 @@ footer {
 .table-con {
     overflow: auto;
 }
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #c8c8c8;
+}
+
+.search input {
+  border: none;
+  background-color: #c8c8c8 ;
+}
+
+.search .icon:hover {
+  cursor: default;
+  background-color: transparent;
+
+
+}
+
+
+
+
