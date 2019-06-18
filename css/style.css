@@ -135,6 +135,7 @@ footer {
     border-radius: 6px;
     color: #000;
     cursor: pointer;
+    transition: vertical-align;
 }
 
 .header-menu-item:hover{
@@ -195,29 +196,94 @@ footer {
     align-items: center;
 }
 
-.filter-container{
-    display: flex;
+.filter-container {
     position: relative;
-    text-align: right;
-    max-height: 53px;
-    padding: 5px 5px 5px 0px;
-    border-bottom: none;
-}
-
-.filter-left {
-    float: left;
+    min-height: 53px;
 }
 
 
 .filter-right {
     float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #filter-search{
-  width: 250px;
+    height: 24px;
+  width: 150px;
   transition: width 0.3s;
 }
 
 #filter-search:focus{
   width: 300px;
+}
+
+/*.button {*/
+/*    color: rgba(0, 0, 0, 0.87);*/
+/*    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);*/
+/*    color: rgba(0, 0, 0, 0.87);*/
+/*    padding: 8px 16px;*/
+/*    font-size: 0.75rem;*/
+/*    min-width: 64px;*/
+/*    box-sizing: border-box;*/
+/*    min-height: 36px;*/
+/*    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;*/
+/*    font-weight: 500;*/
+/*    line-height: 1.4em;*/
+/*    border-radius: 6px;*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+.table-style {
+    overflow: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.table-style td, .table-style th {
+    border: 1px solid rgba(0,0,0,.05);
+    padding: 8px;
+    border-bottom: none;
+    border-left: none;
+    font-weight: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 93px;
+}
+
+.table-style tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+.table-style th:last-child {
+    border-top-right-radius: 6px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-style th:first-child {
+    border-top-left-radius: 6px;
+}
+
+.table-style thead {
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px, rgba(0, 0, 0, 0.08) 0px 2px 2px 0px, rgba(0, 0, 0, 0.05) 0px 3px 1px -2px !important;
+}
+
+.table-style th {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.table-style td:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-con {
+    overflow: auto;
 }
