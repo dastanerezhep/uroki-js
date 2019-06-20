@@ -208,14 +208,14 @@ footer {
     justify-content: flex-end;
 }
 
-#filter-search{
+.filter-search{
   width: 150px;
   transition: width 0.3s;
 
 }
 
 
-#filter-search:focus{
+.filter-search:focus{
   width: 300px;
   outline: none;
 }
