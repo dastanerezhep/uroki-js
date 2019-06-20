@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   tabLabel2.addEventListener("click", function () {
     tabLabel2.classList.add("active");
-    tabContainer2.classList.add("active");
-
     tabLabel1.classList.remove("active");
-    tabContainer1.classList.remove("active");
+
+      tabContainer2.classList.add("active");
+      tabContainer1.classList.remove("active");
   });
 
   let headerMenu = document.getElementById("headerMenu");
